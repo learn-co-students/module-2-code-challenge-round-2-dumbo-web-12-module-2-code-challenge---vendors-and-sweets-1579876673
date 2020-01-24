@@ -8,6 +8,7 @@
 
 Vendor.destroy_all
 Sweet.destroy_all
+Vendorsweet.destroy_all
 
 vendors = ["Insomnia Cookies", "Cookies Cream","Carvel","Gregory's Coffee","Duane Park Patisserie","Tribeca Treats"]
 sweets = ["Chocolate Chip Cookie", "Chocolate Chunk Cookie","M&Ms Cookie","White Chocolate Cookie","Brownie","Peanut Butter Icecream Cake", ]
@@ -19,3 +20,5 @@ end
 sweets.each do |sweet|
   Sweet.create(name: sweet)
 end
+
+Vendorsweet.create(vendor_id: Vendor.all.sample.id, sweet_id: Sweet.all.sample.id, price: rand(25..75))

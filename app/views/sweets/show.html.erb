@@ -1,0 +1,6 @@
+<h1><%= @sweet.name %></h1>
+
+<% @sweet.vendors.each do |vendor| %>
+    <h2><%= link_to vendor.name, vendor_path(vendor) %></h2>
+    <hr>
+<% end %>

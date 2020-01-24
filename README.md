@@ -73,7 +73,7 @@ A user should be able to visit a page to link a vendor and a sweet. The form sho
 - choose a `Sweet` from a select dropdown
 - enter a price
 - submit the form to create a `VendorSweet`
-
+lklklks-------------------------------------------
 Once the `VendorSweet` is created, the user should be redirected to the selected vendor's show page.
 
 ### 3. Vendor show page
